@@ -2,15 +2,15 @@ import './App.css';
 import React from 'react';
 // import { BrowserRouter as Router, Route, } from 'react-router-dom';
 
-import Home from './Componets/Homepage';
-import Navbar from './Componets/Navbar';
+import Login from './Componets/Login';
+
 function App() {
   return (
     <div className="App">
       
       
-      <Navbar/>
-      <Home/> 
+      
+      <Login/>
     
     </div>
   );

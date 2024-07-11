@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 
 
-
+// Array of trainer objects with names, specialties, and image URLs
 const trainersData = [
   {
     name: 'Trainer 1',
@@ -61,7 +61,7 @@ const trainersData = [
 ];
 
 function Trainer() {
-  const [list, setList] = useState(trainersData); // Initialize list with trainersData
+  const [list] = useState(trainersData); // Initialize list with trainersData
   const [search, setSearch] = useState('');
   const [filteredList, setFilteredList] = useState([]);
 
@@ -116,9 +116,10 @@ function Trainer() {
                 <div className="card-body">
                   <h5 className="card-title">Name: {trainer.name}</h5>
                   <p className="card-text">Specialty: {trainer.specialty}</p>
-                  <Link to={`/kilimani-motors-collab/describe/${trainer.id}`}>
+                  <Link to={`${trainer.id}`}>
                     <button className="btn btn-success btn-sm m-3">View trainer details</button>
                   </Link>
+                  
                 </div>
                 
                   

@@ -5,9 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Componets/Homepage';
-import Login from './Componets/Login';
+
 import Trainer from './Componets/Trainer';
 import Workout from './Componets/Workout';
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,10 +18,12 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
   },
+  
   {
-    path: '/login',
-    element: <Login />,
+    path: '/home',
+    element: <Home />,
   },
+ 
   {
     path: '/trainers',
     element: <Trainer />,

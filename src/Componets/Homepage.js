@@ -1,6 +1,9 @@
+import Navbar from "./Navbar";
+
 function Home(){
     return (
         <div>
+        <Navbar/>
     <h1 className="text-center bg-secondary text-light fw-bold">WELCOME TO FITNESS TRACKER.</h1>
     <img src={"https://i.pinimg.com/originals/68/30/b4/6830b433283f0170c56259a2042f795e.jpg"}style={{ width: "1790px", height:"900px",objectFit: "cover" }}alt=""/>
    <div className="row bg-secondary m-3" >
